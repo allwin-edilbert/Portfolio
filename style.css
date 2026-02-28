@@ -1,37 +1,26 @@
 body {
+    background-color: #d3d3d3;
+    margin: 0;
     font-family: "Times New Roman", serif;
-    background-color: #f9f9f9;
-    padding: 40px;
 }
 
-.container {
+/* A4 Page */
+.page {
+    width: 800px;
+    min-height: 1100px;
     background: white;
-    padding: 30px;
-    border: 1px solid black;
+    margin: 40px auto;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.header-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-.header-table td {
-    border: 1px solid black;
-    padding: 10px;
-}
-
-.center-title {
-    text-align: center;
-    font-size: 18px;
-}
-
-.section, .module {
-    border: 1px solid black;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-h3 {
+/* Headings */
+h1, h2, h3 {
     margin-top: 0;
+}
+
+/* Page break for multi-page feel */
+.page-break {
+    page-break-after: always;
+    height: 40px;
 }
